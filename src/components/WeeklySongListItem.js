@@ -12,20 +12,21 @@ class WeeklySongListItem extends Component {
                     <p className="title">{title}</p>
                     <p className="singer">{singer}</p>
                 </div>
-                <div className="view-count">{view}</div>
+                <div className="view-count">{view.toLocaleString()}</div>
             </div>
         );
     }
 }
 
+
+export default WeeklySongListItem;
 WeeklySongListItem.defaultProps = {
     view: 0
 }
 
 WeeklySongListItem.propTypes = {
-    order: PropTypes.number.isRequired,
+    order: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     singer: PropTypes.string.isRequired,
     view: PropTypes.number
 }
-export default WeeklySongListItem;

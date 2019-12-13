@@ -8,10 +8,10 @@ class App extends Component {
   return (
     <div className="App">
       <WeeklySongListItem
-        order = {1}
-        title={"Anh se khong on"}
-        singer={"Anh Tú"}
-        view={20}
+         order="01"
+         title="Em Không Thể"
+         singer="Tiên Tiên, Touliver"
+         view={3000}
       />
     </div>
   );

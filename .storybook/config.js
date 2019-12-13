@@ -1,3 +1,12 @@
 import { configure } from '@storybook/react';
+import { withInfo } from '@storybook/addon-info';
 
-configure(require.context('../src', true, /\.stories\.js$/), module);
+addDecorator(withInfo);
+
+function loadStories() {
+  require('../stories/index');
+  // You can require as many stories as you need.
+}
+
+
+configure(loadStories, module);

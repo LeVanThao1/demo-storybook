@@ -1,1 +1,1 @@
-import './WeeklySongListItem.js.js'
+import './WeeklySongListItem'
